@@ -76,7 +76,7 @@ div[class*="group"] {
 /* 768px 이상일 때 */
 @media (min-width: 768px) {
   div[class*="group"] {
-    width: 100%;
+    width: 50%;
   }
 
   div.group1, div.group4 {
