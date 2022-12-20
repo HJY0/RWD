@@ -253,7 +253,6 @@ input[type="search"] {
 
 /* 공통 인기 사이트 */
 .favorite {
-  /* background-color: skyblue; */
   grid-area: favorite;
   background-position-y: 100%;
 }
@@ -262,6 +261,39 @@ input[type="search"] {
 .twitter {
   /* background-color: burlywood; */
   grid-area: twitter;
+}
+
+.twitter__userInfo {
+  display: inline-flex;
+}
+
+.twitter__userId {
+  margin-left: var(--spacing-xs);
+}
+
+.twitter__userProfile {
+  width: 25%;
+  min-width: 3.125rem;
+  max-width: 6.25rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  float: right;
+  shape-outside: circle(50%);
+  margin-left: var(--spacing-xs);
+}
+
+.twitter__userProfileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 30% 40%;
+}
+
+.twitter__date {
+  display: block;
+  margin-top: var(--spacing-xs);
 }
 
 /* 모바일 디바이스 (Mobile Device) */
@@ -384,7 +416,6 @@ input[type="search"] {
   /* 모바일 인기 사이트 */
   .favorite {
     /* background-color: yellow; */
-
   }
 
   .favorite__list {
