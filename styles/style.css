@@ -295,6 +295,18 @@ input[type="search"] {
   margin-top: var(--spacing-xs);
 }
 
+/* 공통 푸터 */
+.appFooter {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.address {
+  padding-bottom: var(--spacing-md);
+}
+
 /* 모바일 디바이스 (Mobile Device) */
 @media (min-width: 320px) and (max-width: 768px) {
   /* 모바일 헤더 */
@@ -425,6 +437,11 @@ input[type="search"] {
     content: attr(data-tooltip);
     margin-left: var(--spacing-xs);
     color: var(--accent-favorite);
+    font-size: var(--text-sm);
+  }
+
+  /* 모바일 푸터 */
+  .appFooter {
     font-size: var(--text-sm);
   }
 }
